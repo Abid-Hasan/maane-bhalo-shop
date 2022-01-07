@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div style={{ textAlign: "center" }}>
-      <img src={logo} alt="" />
+      <img style={{ width: "35%" }} src={logo} alt="" />
     </div>
   );
 }
