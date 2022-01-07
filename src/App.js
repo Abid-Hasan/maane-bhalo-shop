@@ -1,11 +1,13 @@
-import logo from "./images/maane-bhalo-logo-hq.png";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Shop from "./components/Shop/Shop";
 
 function App() {
   return (
-    <div style={{ textAlign: "center" }}>
-      <img style={{ width: "35%" }} src={logo} alt="" />
-    </div>
+    <>
+      <Header />
+      <Shop />
+    </>
   );
 }
 
