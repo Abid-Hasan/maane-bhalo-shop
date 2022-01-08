@@ -8,6 +8,10 @@
   width: 60%;
 }
 
+/* .product-name {
+  font-family: "Times New Roman", Times, serif;
+} */
+
 .primary-button {
   background-color: darkorchid;
   border: none;
@@ -17,6 +21,9 @@
   cursor: pointer;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
+}
+.primary-button:hover {
+  background-color: #8800cc;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,9 @@
+.cart-container {
+  border-left: 1px solid #444444;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+
+  position: sticky;
+  top: 60px;
+}
