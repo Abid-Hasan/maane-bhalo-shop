@@ -4,7 +4,7 @@
 }
 
 .logo img {
-  height: 150px;
+  height: 80px;
 }
 
 .navbar {
@@ -19,10 +19,18 @@
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 50px;
   font-weight: bold;
   padding: 10px;
 }
 .navbar a:hover {
   background-color: gray;
+}
+
+@media (min-width: 768px) {
+  .navbar a {
+    margin-right: 50px;
+  }
+  .logo img {
+    height: 150px;
+  }
 }
