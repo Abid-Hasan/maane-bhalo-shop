@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+.logo {
+  background-color: lightyellow;
+}
+
 .logo img {
   height: 80px;
 }
