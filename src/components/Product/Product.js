@@ -21,8 +21,12 @@ const Product = (props) => {
           <Rating
             readonly
             initialRating={star}
-            emptySymbol={<FontAwesomeIcon icon={faStarRegular} />}
-            fullSymbol={<FontAwesomeIcon className="full-star" icon={faStar} />}
+            emptySymbol={
+              <FontAwesomeIcon className="rating-star" icon={faStarRegular} />
+            }
+            fullSymbol={
+              <FontAwesomeIcon className="rating-star" icon={faStar} />
+            }
           />
         </p>
         <p>
