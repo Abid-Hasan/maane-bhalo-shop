@@ -1,6 +1,7 @@
 import "./Cart.css";
 
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Cart = ({ cart }) => {
   // let total = cart.reduce((total, current) => total + current.price, 0);
@@ -18,7 +19,9 @@ const Cart = ({ cart }) => {
       <h4>Order Summary</h4>
       <h5>Items Ordered: {totalQuantity}</h5>
       <h5>Total: {totalPrice.toFixed(2)}</h5>
-      <button className="primary-button">Order Review</button>
+      <NavLink to="order-review">
+        <button className="primary-button">Order Review</button>
+      </NavLink>
     </div>
   );
 };
