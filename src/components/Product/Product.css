@@ -1,6 +1,6 @@
 .product {
-  border-bottom: 1px solid #444444;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 20px;
   margin-bottom: 10px;
 }
 
@@ -8,9 +8,9 @@
   width: 60%;
 }
 
-/* .product-name {
-  font-family: "Times New Roman", Times, serif;
-} */
+.full-star {
+  color: gold;
+}
 
 .primary-button {
   background-color: darkorchid;
@@ -30,7 +30,8 @@
   .product {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    gap: 20px;
+    place-items: center;
   }
   .product-image {
     width: 100%;
