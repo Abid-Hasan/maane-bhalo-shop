@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../images/maane-bhalo-logo-hq.png";
 import "./Header.css";
 
-const Header = ({ handleSearch }) => {
+const Header = () => {
   let activeClassName = "active-nav";
   return (
     <>
@@ -36,16 +36,6 @@ const Header = ({ handleSearch }) => {
             Inventory
           </NavLink>
         </nav>
-        <div className="search-container">
-          <input
-            onChange={handleSearch}
-            className="search-box"
-            type="text"
-            name=""
-            id=""
-            placeholder="Type here to search"
-          />
-        </div>
       </div>
     </>
   );

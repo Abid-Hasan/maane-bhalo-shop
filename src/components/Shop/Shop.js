@@ -9,6 +9,7 @@ const Shop = ({
   setProducts,
   filteredProducts,
   setFilteredProducts,
+  handleSearch,
 }) => {
   const [cart, setCart] = useState([]);
 
@@ -56,20 +57,32 @@ const Shop = ({
     addToDb(product.key);
   };
   return (
-    <div className="shop-container">
-      <div className="product-container">
-        {filteredProducts.map((product) => (
-          <Product
-            key={product.key}
-            product={product}
-            handleAddToCart={handleAddToCart}
-          />
-        ))}
+    <>
+      <div className="sticky-top-2 search-container">
+        <input
+          onChange={handleSearch}
+          className="search-box"
+          type="text"
+          name=""
+          id=""
+          placeholder="Type here to search"
+        />
       </div>
-      <div>
-        <Cart cart={cart} />
+      <div className="shop-container">
+        <div className="product-container">
+          {filteredProducts.map((product) => (
+            <Product
+              key={product.key}
+              product={product}
+              handleAddToCart={handleAddToCart}
+            />
+          ))}
+        </div>
+        <div>
+          <Cart cart={cart} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

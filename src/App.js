@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Header handleSearch={handleSearch} />
+      <Header />
       <main>
         <Routes>
           <Route
@@ -35,6 +35,7 @@ function App() {
                 setProducts={setProducts}
                 filteredProducts={filteredProducts}
                 setFilteredProducts={setFilteredProducts}
+                handleSearch={handleSearch}
               />
             }
           />

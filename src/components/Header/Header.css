@@ -1,6 +1,7 @@
 .logo,
 .navbar,
-.sticky-top {
+.sticky-top,
+.sticky-top-2 {
   text-align: center;
 }
 
@@ -27,7 +28,6 @@
 .navbar a {
   color: #ffffff;
   text-decoration: none;
-  /* font-weight: bold; */
   padding: 10px;
 }
 
@@ -37,12 +37,21 @@
 
 .active-nav {
   font-weight: bold;
-  border-bottom: 1px solid white;
+  /* border-bottom: 1px solid white; */
+  /* text-decoration: overline !important; */
+}
+
+.active-nav::before {
+  content: "> ";
+}
+
+.active-nav::after {
+  content: " <";
 }
 
 .search-container {
   background-color: #444444;
-  padding: 10px;
+  padding: 8px;
   width: 100%;
 }
 
