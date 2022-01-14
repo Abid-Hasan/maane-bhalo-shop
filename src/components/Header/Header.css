@@ -29,24 +29,23 @@
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
   background-color: gray;
 }
 
-.active-nav {
+/* .active-nav {
   font-weight: bold;
-  /* border-bottom: 1px solid white; */
-  /* text-decoration: overline !important; */
-}
+} */
 
 .active-nav::before {
-  content: "> ";
+  content: "▶ ";
 }
 
 .active-nav::after {
-  content: " <";
+  content: " ◀";
 }
 
 .search-container {
