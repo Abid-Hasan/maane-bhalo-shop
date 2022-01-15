@@ -23,7 +23,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive ? activeClassName : undefined
             }
-            to="order-review"
+            to="/order-review"
           >
             Order Review
           </NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive ? activeClassName : undefined
             }
-            to="inventory"
+            to="/inventory"
           >
             Inventory
           </NavLink>
