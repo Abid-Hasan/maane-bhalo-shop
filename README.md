@@ -1,3 +1,4 @@
 # Maane-Bhalo Shop
+Initial stage of the front-end of an e-commerce site with searching, cart management, etc. Deployed in Netlify.
 
-Live: https://maanebhalo.netlify.app
+### https://maanebhalo.netlify.app
